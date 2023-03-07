@@ -5,12 +5,12 @@ import javax.security.sasl.AuthorizeCallback;
 
 public class ProductRepositoryTest {
 
-    Product book1 = new Book(1, "Букварь", 100, "Автор1");
-    Product book2 = new Book(2, "Гарри Поттер", 500, "Автор2");
-    Product book3 = new Book(3, "Азбука", 200, "Автор3");
-    Product smartphone4 = new Smartphone(4, "Smartphone4", 20000, "Производитель1");
-    Product smartphone5 = new Smartphone(5, "Smartphone5", 25000, "Производитель2");
-    Product smartphone6 = new Smartphone(6, "Smartphone6", 30000, "Производитель3");
+    private Product book1 = new Book(1, "Bukvar", 100, "People");
+    private Product book2 = new Book(2, "Harry Potter", 500, "Rowling");
+    private Product book3 = new Book(3, "Azbuka", 200, "People");
+    private Product smartphone4 = new Smartphone(4, "Nokia 4", 20000, "Finland");
+    private Product smartphone5 = new Smartphone(5, "Nokia 5", 25000, "Finland");
+    private Product smartphone6 = new Smartphone(6, "Iphone 13 Pro", 30000, "USA");
 
     @Test
 
