@@ -29,6 +29,19 @@ public class ProductRepositoryTest {
 
     @Test
 
+    public void testRemoveNotExistedId() {
+        ProductRepository repo = new ProductRepository();
+        repo.save(book1);
+        repo.save(book2);
+        repo.save(book3);
+
+        Assertions.assertThrows(NotFoundException.class, () -> {
+            repo.removeById(10);
+        });
+    }
+
+    @Test
+
     public void removeById() {
         ProductRepository repo = new ProductRepository();
         repo.save(book1);
